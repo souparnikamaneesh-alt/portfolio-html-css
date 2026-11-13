@@ -1,0 +1,395 @@
+
+/* Google Font and General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaff;
+    color: #51465c;
+    line-height: 1.7;
+}
+
+/* Navigation */
+
+header {
+    background: rgba(255, 250, 255, 0.95);
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px rgba(100, 70, 120, 0.07);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    color: #8b6ca8;
+}
+
+.logo span {
+    color: #e9a7bb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #66566f;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c17fa4;
+}
+
+/* Home Section */
+
+.hero {
+    min-height: 85vh;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #f4eafa, #fff0f3, #f2f6eb);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.small-heading,
+.section-label {
+    color: #b17eae;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.2;
+    margin: 15px 0;
+    color: #584767;
+}
+
+.hero h1 span {
+    color: #a57ab9;
+}
+
+.hero h2 {
+    font-size: 18px;
+    color: #bc829e;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.small-heading) {
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: #a98abe;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8b6ca8;
+    transform: translateY(-3px);
+}
+
+/* Decorative Circle */
+
+.hero-art {
+    text-align: center;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e8d9f4, #f9dfe8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #ffffff;
+    box-shadow: 0 10px 35px rgba(120, 90, 140, 0.15);
+}
+
+.circle span {
+    font-family: 'Playfair Display', serif;
+    font-size: 110px;
+    color: #9675ac;
+}
+
+.hero-art p {
+    margin-top: 18px;
+    color: #a57a9d;
+    font-size: 14px;
+}
+
+/* Common Section Styling */
+
+.section {
+    padding: 85px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #715982;
+    margin-bottom: 35px;
+}
+
+.pastel-section {
+    background: #f7f0fa;
+}
+
+/* About */
+
+.about-card,
+.info-card,
+.goal-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(120, 90, 140, 0.07);
+}
+
+/* Education */
+
+.info-card h3,
+.goal-card h3 {
+    color: #9675ac;
+    margin-bottom: 8px;
+}
+
+.info-card span {
+    color: #c17fa4;
+    font-weight: 600;
+}
+
+/* Skills and Projects */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.skill-card,
+.project-card,
+.interest-card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(120, 90, 140, 0.07);
+    transition: 0.3s;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.interest-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(120, 90, 140, 0.13);
+}
+
+.skill-card h3,
+.project-card h3 {
+    color: #9474ad;
+    margin-bottom: 10px;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 13px;
+    border-radius: 20px;
+    background: #f1e6f7;
+    color: #9877aa;
+    font-size: 12px;
+}
+
+/* Dance Section */
+
+.dance-section {
+    background: linear-gradient(135deg, #fff0f3, #f4eafa);
+}
+
+.dance-card {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(120, 90, 140, 0.08);
+}
+
+.dance-icon {
+    font-size: 45px;
+    color: #d89ab4;
+    margin-bottom: 10px;
+}
+
+.dance-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #a27bb0;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.dance-tags {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dance-tags span {
+    background: #f8e8ef;
+    color: #a46f8e;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Interests */
+
+.interest-card {
+    color: #8c719d;
+    font-weight: 500;
+}
+
+/* Contact */
+
+.contact-section {
+    background: #fbf5fc;
+}
+
+.contact-text {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    background: #a98abe;
+    padding: 11px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #d99ab5;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #eee3f3;
+    color: #806b8e;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .circle {
+        width: 190px;
+        height: 190px;
+    }
+
+    .circle span {
+        font-size: 85px;
+    }
+
+    .about-card,
+    .dance-card {
+        padding: 25px;
+    }
+}
